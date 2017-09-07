@@ -1,0 +1,13 @@
+// parallax.scss
+// =========
+
+.pv-container {
+    overflow: hidden;
+
+    .pv-block {
+        will-change: transform;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}

@@ -1,0 +1,31 @@
+// star-wars.scss
+// =========
+
+section.star-wars {
+    @include media-query(lap) {
+        height: 450px !important;
+    }
+    @include media-query(palm-ld) {
+        height: 100vh !important;
+    }
+    @include media-query(palm-pt) {
+        height: 300px !important;
+    }
+    .bg-space {
+    	background-image: url(../images/backgrounds/header-bg.png);
+    	background-position: center;
+    	background-repeat: no-repeat;
+    	background-size: cover;
+    	width: 100%;
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	padding: 110px 0px 30px;
+        @include media-query(palm-ld) {
+            padding-top: 60px;
+        }
+        @include media-query(palm-pt ) {
+            padding-top: 80px;
+        }
+    }
+}

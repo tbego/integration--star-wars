@@ -29,9 +29,27 @@
 		</ul>
 	</header>
 
+	<section class="star-wars pv-container" pv-height="500px">
+		<div class="bg-space pv-block">
+			<img src="images/logo/logo.png" alt="">
+		</div>
+	</section>
+
 	<!-- vendor -->
 	<script type="text/javascript" src="js/vendor.js"></script>
 	<!-- javascript -->
 	<script type="text/javascript" src="js/main.js"></script>
+
+	<!-- parallax-vanilla init -->
+	<script type="text/javascript">
+		pv.init({
+			container : {
+				class : 'pv-container',
+			},
+			block : {
+				class : 'pv-block',
+			}
+		});
+	</script>
 </body>
 </html>

@@ -27,6 +27,7 @@
     "css-brunch": "^2.6.1",
     "javascript-brunch": "^2.0.0",
     "jshint-brunch": "^2.0.0",
+    "parallax-vanilla": "^1.1.1",
     "sass-brunch": "^2.10.4",
     "uglify-js-brunch": "^2"
   }
