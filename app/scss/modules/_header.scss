@@ -1,0 +1,61 @@
+// header.scss
+// =========
+
+header {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	padding: 25px 0;
+	background-color: map-get($colors, black_opacity_50);
+	@include media-query(palm) {
+		background-image: url('../images/backgrounds/header-bg.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	&.mobile {
+		bottom: 0px;
+	}
+
+	img {
+		position: absolute;
+		top: 20px;
+		height: 20px;
+		display: none;
+		&.menu {
+			right: 20px;
+			@include media-query(palm) {
+				display: block;
+			}
+		}
+		&.close {
+			left: 20px;
+		}
+	}
+
+	ul {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		width: 80%;
+		margin: auto;
+		@include media-query(palm) {
+			display: none;
+			flex-direction: column;
+			margin-top: 30px;
+		}
+		li {
+			@include media-query(palm) {
+				margin-bottom: 20px;
+			}
+			a {
+				text-decoration: none;
+				color: map-get($colors, white);
+				text-transform: uppercase;
+				font-weight: bold;
+				@include media-query(palm) {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
