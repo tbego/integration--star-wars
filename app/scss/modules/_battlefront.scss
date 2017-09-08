@@ -1,0 +1,41 @@
+// battlefront.scss
+// =========
+
+section.battlefront {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 60px 0px;
+    width: 80%;
+    margin: auto;
+
+    article {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+        @include media-query(palm) {
+            width: 100%;
+        }
+        h2 {
+            width: 100%;
+            margin: 0px 0px 20px 0px;
+            @include media-query(palm) {
+                text-align: center;
+            }
+        }
+        p {
+            margin: 0px 0px 20px 0px;
+            font-size: 16px;
+            @include media-query(palm) {
+                text-align: center;
+            }
+        }
+    }
+    aside {
+        width: 40%;
+        @include media-query(palm) {
+            display: none;
+        }
+    }
+}
