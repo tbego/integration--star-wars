@@ -1,0 +1,8 @@
+// kiloren.scss
+// =========
+
+section.kiloren {
+    @include media-query(palm) {
+        height: 200px !important;
+    }
+}
