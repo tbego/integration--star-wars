@@ -1,0 +1,61 @@
+// far-away.scss
+// =========
+
+section.far-away {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px;
+    h1 {
+        text-align: center;
+        margin: 0px 0px 20px 0px;
+    }
+
+    article {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        @include media-query(palm) {
+            flex-direction: column;
+        }
+        img {
+            width: 250px;
+            @include media-query(palm) {
+                width: 100%;
+            }
+        }
+
+        div.content {
+            width: calc(100% - 260px);
+            margin: 0px 0px 0px 10px;
+            @include media-query(palm) {
+                margin: 10px 0px 0px 0px;
+                width: 100%;
+            }
+            p {
+                font-size: 14px;
+                line-height: 20px;
+                span {
+                    &.italic {
+                        font-style: italic;
+                    }
+                    &.bold {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    ul {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 10px 0px 0px 0px;
+        li {
+            &:before {
+               content: '- ';
+            }
+        }
+    }
+}
