@@ -3,33 +3,47 @@
 
 header {
 	position: fixed;
-	z-index: 1;
 	top: 0px;
+	z-index: 1;
 	width: 100%;
-	padding: 25px 0;
-	background-color: map-get($colors, black_opacity_50);
+	padding: 20px 0;
+	background-color: map-get($colors, black_opacity_80);
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
 	@include media-query(palm) {
+		justify-content: flex-end;
+	}
+	&.menu-opened {
 		background-image: url('../images/backgrounds/header-bg.png');
 		background-size: cover;
 		background-repeat: no-repeat;
-	}
-	&.mobile {
 		bottom: 0px;
+		justify-content: flex-start;
+		img {
+			&.menu {
+				display: none;
+			}
+			&.close {
+				display: block;
+			}
+		}
+		ul {
+			display: flex;
+		}
 	}
 
 	img {
-		position: absolute;
-		top: 20px;
-		height: 20px;
 		display: none;
+		width: 20px;
 		&.menu {
-			right: 20px;
+			margin: 0px 20px 0px 0px;
 			@include media-query(palm) {
 				display: block;
 			}
 		}
 		&.close {
-			left: 20px;
+			margin: 0px 0px 0px 20px;
 		}
 	}
 
@@ -38,7 +52,6 @@ header {
 		align-items: center;
 		justify-content: space-around;
 		width: 80%;
-		margin: auto;
 		@include media-query(palm) {
 			display: none;
 			flex-direction: column;
@@ -46,7 +59,7 @@ header {
 		}
 		li {
 			@include media-query(palm) {
-				margin-bottom: 20px;
+				margin-bottom: 30px;
 			}
 			a {
 				text-decoration: none;
