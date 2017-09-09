@@ -1,0 +1,71 @@
+// footer.scss
+// =========
+
+footer {
+    background-image: url('../images/backgrounds/darthvader.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 10%;
+    width: 100%;
+
+    .copyright {
+        margin: 0px 0px 40px 0px;
+        color: map-get($colors, white);
+        width: 100%;
+        text-align: center;
+        @include media-query(palm) {
+            display: none;
+        }
+        span {
+            font-weight: bold;
+        }
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        color: map-get($colors, white);
+        .links {
+            width: 33%;
+            @include media-query(palm) {
+                width: 50%;
+            }
+            li {
+                margin: 0px 0px 10px 0px;
+                a {
+                    color: map-get($colors, white);
+                }
+            }
+            &:nth-child(2) {
+                text-align: center;
+            }
+        }
+
+        .follow {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 33%;
+            @include media-query(palm) {
+                width: 100%;
+                flex-direction: row;
+                align-items: center;
+                margin: 50px 0px 0px 0px;
+            }
+
+            ul {
+                display: flex;
+                justify-content: flex-end;
+                margin: 10px 0px 0px 0px;
+                @include media-query(palm) {
+                    margin: 0px 0px 0px 20px;
+                    justify-content: flex-start;
+                }
+                li {
+                    margin: 0px 0px 0px 20px;
+                }
+            }
+        }
+    }
+}
