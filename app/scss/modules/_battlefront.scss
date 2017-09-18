@@ -1,7 +1,7 @@
 // battlefront.scss
 // =========
 
-section.battlefront {
+.battlefront {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -9,7 +9,7 @@ section.battlefront {
     width: 80%;
     margin: auto;
 
-    article {
+    div {
         display: flex;
         align-items: center;
         flex-direction: column;

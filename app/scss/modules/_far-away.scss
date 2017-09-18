@@ -1,7 +1,7 @@
 // far-away.scss
 // =========
 
-section.far-away {
+.far-away {
     width: 80%;
     margin: auto;
     display: flex;
@@ -12,7 +12,7 @@ section.far-away {
         margin: 0px 0px 20px 0px;
     }
 
-    article {
+    div {
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;

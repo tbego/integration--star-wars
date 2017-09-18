@@ -47,27 +47,29 @@ header {
 		}
 	}
 
-	ul {
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
+	nav {
 		width: 80%;
-		@include media-query(palm) {
-			display: none;
-			flex-direction: column;
-			margin-top: 30px;
-		}
-		li {
+		ul {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
 			@include media-query(palm) {
-				margin-bottom: 30px;
+				display: none;
+				flex-direction: column;
+				margin-top: 30px;
 			}
-			a {
-				text-decoration: none;
-				color: map-get($colors, white);
-				text-transform: uppercase;
-				font-weight: bold;
+			li {
 				@include media-query(palm) {
-					font-size: 16px;
+					margin-bottom: 30px;
+				}
+				a {
+					text-decoration: none;
+					color: map-get($colors, white);
+					text-transform: uppercase;
+					font-weight: bold;
+					@include media-query(palm) {
+						font-size: 16px;
+					}
 				}
 			}
 		}
